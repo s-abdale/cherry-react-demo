@@ -1,6 +1,6 @@
 # React app exploration
 
-Hello Weekend Sprinters! This repo has some notes on what we covered in our call today, specifically React router dom and Links. To see more, check out the new pages.
+Hello Weekend Sprinters! This repo has some notes on what we covered in our call today, specifically React router dom and Links. To see more, check out the new pages! I'll be adding to this in a separate branch :)
 
 Quick note on what broke during the demo, react-router-dom hadn't been installed so I fixed it by running the following command in my terminal:
   ```npm i react-router-dom```
