@@ -2,7 +2,7 @@ import './mystery.css';
 
 function Mystery() {
   return (
-    <div>
+    <div className='mystery-main'>
       mystery page
     </div>
   )
