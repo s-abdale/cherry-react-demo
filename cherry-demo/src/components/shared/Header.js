@@ -2,7 +2,7 @@ import './header.css';
 
 function Header() {
   return (
-    <div>
+    <div className='main-header-body'>
       header component
     </div>
   )

@@ -1,0 +1,7 @@
+.main-app-body {
+  height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

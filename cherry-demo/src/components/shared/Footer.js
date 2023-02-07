@@ -2,7 +2,7 @@ import './footer.css';
 
 function Footer() {
   return (
-    <div>
+    <div className='main-footer-body'>
       footer component
     </div>
   )

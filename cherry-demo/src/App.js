@@ -14,7 +14,7 @@ import Footer from './components/shared/Footer';
 
 function App() {
   return (
-    <div>
+    <div className='main-app-body'>
       <Router>
 
         <Header/>
