@@ -4,4 +4,7 @@
   width: 98.9vw;
   min-height: 24px;
   padding: 8px;
+
+  display: flex;
+  justify-content: space-around;
 }
