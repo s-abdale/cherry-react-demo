@@ -8,17 +8,25 @@ import Home from './components/Home';
 import About from './components/About';
 import Mystery from './components/Mystery';
 
+import Header from './components/shared/Header';
+import Footer from './components/shared/Footer';
 
 
 function App() {
   return (
     <div>
       <Router>
+
+        <Header/>
+
         <Routes>
           <Route path="/home" element={<Home/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/mystery" element={<Mystery/>}></Route>
         </Routes>
+
+        <Footer/>
+
       </Router>
     </div>
   );
