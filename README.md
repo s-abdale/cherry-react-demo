@@ -23,3 +23,22 @@ How to create react app:
 2. cd into the folder
 3. npm start
 4. clear out react boilerplate stuff and add in your code
+
+App structure:
+- top level: index.js
+    - we don't really code in this page
+- next: app.js
+    - this is where you plug in your pages/components
+- finally: everything in the ./components folder
+
+React router:
+- Top level: Router
+    - this is where you put shared components that you want to see all the time (headers, footers, navigation etc.)
+    - this also contains the list of Routes ...
+- Second level: Routes
+    - this contains the list of different pages
+- Last level: Route
+    - this is each individual route/page
+    - each Route contains a path and an element. 
+        - path = the actual url path that you see in the browser
+        - element = the code that gets loaded up when you go to that path
