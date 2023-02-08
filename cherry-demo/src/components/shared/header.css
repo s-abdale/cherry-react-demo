@@ -1,10 +1,31 @@
 .main-header-body {
   background-color: black;
   color: whitesmoke;
-  width: 98.9vw;
   min-height: 24px;
-  padding: 8px;
+  padding: 16px;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.header-icon {
+  height: 24px;
+  margin-left: 8px;
+}
+
+.header-links {
+  text-decoration: none;
+  color: white;
+  font-weight: 650;
+}
+.header-links:hover {
+  color: yellow;
+}
+
+.grouped-header-links {
+  width: 32vw;
+  margin-right: 8px;
+  
+  display: flex;
+  justify-content: space-between;
 }

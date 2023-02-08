@@ -4,10 +4,13 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <div className='main-header-body'>
-      header component
-      <Link to="/home">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/mystery">Mystery</Link>
+      <img src="/cherries_emoji.png" className='header-icon' alt='Cherries emoji'/>
+
+      <div className='grouped-header-links'>
+        <Link to="/home" className='header-links'>Home</Link>
+        <Link to="/about" className='header-links'>About</Link>
+        <Link to="/mystery" className='header-links'>Mystery</Link>
+      </div>
     </div>
   )
 }
