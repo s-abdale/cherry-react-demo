@@ -3,7 +3,7 @@ import './mystery.css';
 function Mystery() {
   return (
     <div className='mystery-main'>
-      mystery page
+      <h1>Mystery ... </h1>
     </div>
   )
 }
