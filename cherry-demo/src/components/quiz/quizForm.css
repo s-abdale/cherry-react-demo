@@ -1,0 +1,46 @@
+.button {
+  background-color: yellow;
+  border-radius: 12px;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  border: 0;
+  font-size: 16px;
+}
+
+.button:hover,
+.button:focus {
+  outline: 0;
+  background: yellow;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 16rem;
+  margin-top: 1rem;
+}
+
+.quiz-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.restart-quiz-link {
+  margin-top: 4rem;
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+.restart-quiz-link:hover {
+  margin-top: 4rem;
+  text-decoration: none;
+  color: grey;
+  font-style: italic;
+}
+.result-statement {
+  margin-bottom: 4rem;
+}

@@ -51,7 +51,6 @@ function QuizForm() {
     },
   ]
   
-
   useEffect( () => {
     setCurrentQ(QuestionBank[0])
   }, []);
@@ -59,14 +58,13 @@ function QuizForm() {
     setResult(null)
   }, []);
 
-
   function handleClickA (){
     const nextQ = QuestionBank.find(question => question.id === currentQ.idNextQuestionA);
     if (nextQ) {setCurrentQ(nextQ)}
     else {
       setResult(currentQ.crocResultA);
     };
-  }
+  };
 
   function handleClickB (){
     const nextQ = QuestionBank.find(question => question.id === currentQ.idNextQuestionB);
@@ -74,26 +72,28 @@ function QuizForm() {
     else {
       setResult(currentQ.crocResultB);
     };
-  }
+  };
 
   if (!result) {
     return (
       <>
-        <div>
+        <div className='quiz-container'>
           <p> {currentQ.question} </p>  
-          <button className="quiz-button" onClick={handleClickA}> {currentQ.answerA} </button>  
-          <button className="quiz-button" onClick={handleClickB}> {currentQ.answerB} </button>
+          <div className='buttons-container'>
+            <button className="button" onClick={handleClickA}> {currentQ.answerA} </button>
+            <button className="button" onClick={handleClickB}> {currentQ.answerB} </button>
+          </div>
         </div>
-        <Link className="quiz-link" to="/home/quiz" onClick={() => window.location.reload()}> restart quiz </Link>
+        <Link className="restart-quiz-link" to="/home/quiz" onClick={() => window.location.reload()}> restart quiz </Link>
       </>
     )
   }
   else {
     return (
-      <>
-        <p>🎉 complete! answer is: {resultsBank[result].name}</p>
-        <Link className="quiz-link" to="/home/quiz" onClick={() => window.location.reload()}> try again! </Link>
-      </>
+      <div className='results-container'>
+        <p className='result-statement'>🎉 complete! answer is: {resultsBank[result].name}</p>
+        <Link className="restart-quiz-link" to="/home/quiz" onClick={() => window.location.reload()}> try again! </Link>
+      </div>
     )
   }
 }

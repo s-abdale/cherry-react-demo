@@ -5,7 +5,9 @@ function Quiz() {
   return (
     <div className='quiz-main'>
       <h1>Quiz! </h1>
-      <QuizForm/>
+      <div className='form-container'>
+        <QuizForm/>
+      </div>
     </div>
   )
 }
