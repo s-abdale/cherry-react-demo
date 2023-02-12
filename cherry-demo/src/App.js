@@ -32,7 +32,6 @@ function App() {
     // the ${theme} class is a variable theme that switches between 'light' and 'dark'
     <div className={`main-app-body ${theme}`}>
       
-
       <Router>
         <header className="header-container">
           <Header/>
