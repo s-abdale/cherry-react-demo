@@ -1,0 +1,7 @@
+.quiz-main {
+  height: 95vh;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}

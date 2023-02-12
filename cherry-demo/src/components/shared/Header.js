@@ -10,6 +10,7 @@ function Header() {
         <Link to="/home" className='header-links'>Home</Link>
         <Link to="/about" className='header-links'>About</Link>
         <Link to="/mystery" className='header-links'>Mystery</Link>
+        <Link to="/quiz" className='header-links'>Quiz</Link>
       </div>
     </div>
   )

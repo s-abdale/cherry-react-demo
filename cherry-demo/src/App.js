@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Mystery from './components/Mystery';
+import Quiz from './components/Quiz';
 
 import Header from './components/shared/Header';
 import Footer from './components/shared/Footer';
@@ -42,6 +43,7 @@ function App() {
           <Route path="/home" element={<Home/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/mystery" element={<Mystery/>}></Route>
+          <Route path="/quiz" element={<Quiz/>}></Route>
         </Routes>
 
         <Footer/>
