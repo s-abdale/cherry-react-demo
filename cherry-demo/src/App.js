@@ -7,7 +7,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Mystery from './components/Mystery';
-import Quiz from './components/Quiz';
+import Quiz from './components/quiz/Quiz';
 
 import Header from './components/shared/Header';
 import Footer from './components/shared/Footer';
