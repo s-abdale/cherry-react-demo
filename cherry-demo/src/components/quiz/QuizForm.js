@@ -8,14 +8,55 @@ import { Link } from 'react-router-dom';
 function QuizForm() {
   const [currentQ, setCurrentQ] = useState("");
   const [result, setResult] = useState();
-  const resultsBank = ['blue', 'lavendar', 'yellow', 'green', 'sza', 'cream', 'black'];
+  const resultsBank = [
+    {
+      name: null,
+      image: null,
+      description: null
+    },
+    {
+      name: 'blue',
+      image: 'y',
+      description: 'z'
+    },
+    {
+      name: 'lavendar',
+      image: 'y',
+      description: 'z'
+    },
+    {
+      name: 'yellow',
+      image: 'y',
+      description: 'z'
+    },
+    {
+      name: 'green',
+      image: 'y',
+      description: 'z'
+    },
+    {
+      name: 'sza',
+      image: 'y',
+      description: 'z'
+    },
+    {
+      name: 'cream',
+      image: 'y',
+      description: 'z'
+    },
+    {
+      name: 'black',
+      image: 'y',
+      description: 'z'
+    },
+  ]
   
 
   useEffect( () => {
     setCurrentQ(QuestionBank[0])
   }, []);
   useEffect( () => {
-    setResult(0)
+    setResult(null)
   }, []);
 
 
@@ -35,8 +76,6 @@ function QuizForm() {
     };
   }
 
-
-
   if (!result) {
     return (
       <>
@@ -52,7 +91,7 @@ function QuizForm() {
   else {
     return (
       <>
-        <p>🎉 complete! answer is: {resultsBank[result]}</p>
+        <p>🎉 complete! answer is: {resultsBank[result].name}</p>
         <Link className="quiz-link" to="/home/quiz" onClick={() => window.location.reload()}> try again! </Link>
       </>
     )

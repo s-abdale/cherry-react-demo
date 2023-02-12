@@ -19,7 +19,7 @@ const QuestionBank = [
       question: "Do you wear your crocs in sports mode?",
       id: 2,
       answerA: "Yes",
-      crocResultA: 0, // TERMINAL: blue
+      crocResultA: 1, // TERMINAL: blue
       answerB: "No",
       idNextQuestionB: 3 // HANDLES YELLOW AND LAVANDER
   },
@@ -27,25 +27,25 @@ const QuestionBank = [
       question: "Which do you like better: flowers or rubber ducks?",
       id: 3,
       answerA: "Flowers",
-      crocResultA: 1, // TERMINAL: lavander
+      crocResultA: 2, // TERMINAL: lavander
       answerB: "Rubber ducks",
-      crocResultB: 2, // TERMINAL: yellow
+      crocResultB: 3, // TERMINAL: yellow
   },
   {
       question: "Which look are you going for: bold colours or unexpected details?",
       id: 4,
       answerA: "Bold colours",
-      crocResultA: 3, // TERMINAL: green
+      crocResultA: 4, // TERMINAL: green
       answerB: "Details",
-      crocResultB: 4, // TERMINAL: sza wood
+      crocResultB: 5, // TERMINAL: sza wood
   },
   {
       question: "Do you only wear white sneakers?",
       id: 5,
       answerA: "Yes",
-      crocResultA: 5, // TERMINAL: cream
+      crocResultA: 6, // TERMINAL: cream
       answerB: "No",
-      crocResultB: 6 // TERMINAL: black
+      crocResultB: 7 // TERMINAL: black
   }
 ]
 
