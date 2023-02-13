@@ -9,8 +9,7 @@
   font-size: 16px;
 }
 
-.button:hover,
-.button:focus {
+.button:hover{
   outline: 0;
   background: yellow;
   box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
@@ -32,15 +31,17 @@
 .restart-quiz-link {
   margin-top: 4rem;
   text-decoration: none;
-  color: black;
+  color: gray;
   font-style: italic;
 }
+
 .restart-quiz-link:hover {
   margin-top: 4rem;
   text-decoration: none;
-  color: grey;
+  color: black;
   font-style: italic;
 }
-.result-statement {
-  margin-bottom: 4rem;
+
+.croc-image {
+  width: 16rem;
 }

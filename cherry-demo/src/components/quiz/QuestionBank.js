@@ -47,19 +47,41 @@ const QuestionBank = [
       answerB: "No",
       crocResultB: 7 // TERMINAL: black
   }
-]
+];
 
-export default QuestionBank;
+const ResultsBank = [
+    {
+        name: null,
+        image: null
+    },
+    {
+        name: 'blue',
+        image: 'blue-croc.png'
+    },
+    {
+        name: 'lavendar',
+        image: 'lavendar-croc.png'
+    },
+    {
+        name: 'yellow',
+        image: 'yellow-croc.png'
+    },
+    {
+        name: 'green',
+        image: 'green-croc.png'
+    },
+    {
+        name: 'sza',
+        image: 'sza-croc.png'
+    },
+    {
+        name: 'bone',
+        image: 'bone-croc.png'
+    },
+    {
+        name: 'black',
+        image: 'black-croc.png'
+    },
+];
 
-/* 
-  What colour crocs should you get?
-
-  Options:
-    black
-    cream
-    green
-    sza wood
-    lavender
-    blue
-    yellow
-*/
+export { QuestionBank, ResultsBank };

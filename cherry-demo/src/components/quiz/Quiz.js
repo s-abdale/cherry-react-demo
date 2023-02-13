@@ -4,7 +4,7 @@ import QuizForm from './QuizForm';
 function Quiz() {
   return (
     <div className='quiz-main'>
-      <h1>Quiz! </h1>
+      <h1>Quiz 📝</h1>
       <div className='form-container'>
         <QuizForm/>
       </div>

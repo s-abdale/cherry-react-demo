@@ -1,5 +1,5 @@
 import './quizForm.css';
-import QuestionBank from "./QuestionBank";
+import { QuestionBank, ResultsBank } from "./QuestionBank";
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -8,48 +8,6 @@ import { Link } from 'react-router-dom';
 function QuizForm() {
   const [currentQ, setCurrentQ] = useState("");
   const [result, setResult] = useState();
-  const resultsBank = [
-    {
-      name: null,
-      image: null,
-      description: null
-    },
-    {
-      name: 'blue',
-      image: 'y',
-      description: 'z'
-    },
-    {
-      name: 'lavendar',
-      image: 'y',
-      description: 'z'
-    },
-    {
-      name: 'yellow',
-      image: 'y',
-      description: 'z'
-    },
-    {
-      name: 'green',
-      image: 'y',
-      description: 'z'
-    },
-    {
-      name: 'sza',
-      image: 'y',
-      description: 'z'
-    },
-    {
-      name: 'cream',
-      image: 'y',
-      description: 'z'
-    },
-    {
-      name: 'black',
-      image: 'y',
-      description: 'z'
-    },
-  ]
   
   useEffect( () => {
     setCurrentQ(QuestionBank[0])
@@ -84,15 +42,18 @@ function QuizForm() {
             <button className="button" onClick={handleClickB}> {currentQ.answerB} </button>
           </div>
         </div>
-        <Link className="restart-quiz-link" to="/home/quiz" onClick={() => window.location.reload()}> restart quiz </Link>
+        <Link className="restart-quiz-link" to="/home/quiz" onClick={() => window.location.reload()}>restart quiz</Link>
       </>
     )
   }
   else {
+    let image = ResultsBank[result].image;
+
     return (
-      <div className='results-container'>
-        <p className='result-statement'>🎉 complete! answer is: {resultsBank[result].name}</p>
-        <Link className="restart-quiz-link" to="/home/quiz" onClick={() => window.location.reload()}> try again! </Link>
+      <div className='quiz-container'>
+        <p className='result-statement'>🎉 complete! you should get {ResultsBank[result].name} crocs</p>
+        <img src={`/quiz-media/${image}`} className='croc-image' alt='Picture of croc'/>
+        <Link className="restart-quiz-link" to="/home/quiz" onClick={() => window.location.reload()}>try again!</Link>
       </div>
     )
   }
