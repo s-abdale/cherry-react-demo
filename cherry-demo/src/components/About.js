@@ -22,6 +22,7 @@ function About() {
             <li>plug in an api</li>
             <li>add authentication</li>
             <li>create a database if time permits</li>
+            <li>send email after comleting quiz <mark>(see <a href='https://stackoverflow.com/questions/55795125/how-to-send-email-from-my-react-web-application'>this</a>)</mark></li>
           </ul>
         </div>
 
